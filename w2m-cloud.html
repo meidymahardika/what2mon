@@ -67,13 +67,12 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#services">Services</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="w2m-cloud.html">W2M Cloud</a></li>
-            <li><a href="cyber-security-solutions.html">Cyber Security Solutions</a></li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li><a href="https://kb.what2mon.com">Knowledge base</a></li>
+            <li><a href="https://kb.what2mon.com">Knowledge Base</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Dropdown 1</a></li>
@@ -105,10 +104,47 @@
   <main class="main">
 
     <div class="container py-3 my-3">
-      <h2 class="text-dark" style="text-align: center;">W2M Cloud</h2>
-      <h5 style="text-align: center; color: #666666;">Cloud Ready IT Infrastructure and Cyber Security Management In-a-Box</h5>
+      <div class="mb-5">
+        <h2 class="text-dark" style="text-align: center;">W2M Cloud</h2>
+        <h5 style="text-align: center; color: #666666;">Cloud IT Infrastructure and Cyber Security Management In-a-Box</h5>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <p>
+            This is a comprehensive, pre-configured solution that provides businesses with a fully managed cloud IT infrastructure and cybersecurity framework. It integrates essential cloud computing resources, security tools, and managed services into a single package, ensuring seamless deployment, management, and protection of IT environments.
+          </p>
+          
+          <div className="mt-3">
+            <h6 className="fw-bolder">Key components include:</h6>
+            <ul>
+              <li className="mb-2">Cloud Infrastructure: Scalable virtual machines, storage, and networking.</li>
+              <li className="mb-2">Security Operations: Threat detection, response, and compliance management.</li>
+              <li className="mb-2">Automation & Monitoring: AI-driven performance optimization and security analytics.</li>
+              <li className="mb-2">Managed Services: 24/7 support, disaster recovery, and system integration.</li>
+            </ul>
+          </div>
+
+          <div className="mt-3">
+            <h6 className="fw-bolder">Purpose</h6>
+            <p className="text-muted mb-3">The solution is designed to:</p>
+            <div className="ps-4">
+              <ol>
+                <li className="mb-3">Simplify IT Operations – Reduce complexity by providing a plug-and-play infrastructure with built-in security.</li>
+                <li className="mb-2">Enhance Cybersecurity – Protect business data and operations from cyber threats through proactive monitoring and response.</li>
+                <li className="mb-2">Improve Cost Efficiency – Optimize cloud resources and security spending with a managed service model.</li>
+                <li className="mb-2">Ensure Compliance – Help businesses meet industry security and data protection regulations.</li>
+                <li className="mb-2">Enable Scalability – Provide a flexible IT backbone that grows with business needs.</li>
+              </ol>
+            </div>
+          </div>
+
+          <p className="mt-3">
+            This solution is ideal for businesses looking to modernize their IT without extensive in-house expertise.
+          </p>
+        </div>
+      </div>
       <!-- Table -->
-      <div class="table-responsive mt-5">
+      <div class="table-responsive mt-5 d-none d-sm-block">
         <table class="table table-striped table-bordered">
           <thead class="table-dark">
             <tr>
@@ -139,7 +175,7 @@
               <td>Patch management for endpoints running Windows, Linux, and macOS.</td>
             </tr>
             <tr>
-              <td>3</td>
+              <td>4</td>
               <td>CI-CD (Continuous Integration - Continuous Deployment)</td>
               <td>Harbor, Gitlab</td>
               <td>Cloud software integration.</td>
@@ -327,6 +363,386 @@
           </tbody>
         </table>
       </div>
+
+      <div class="card-container d-sm-none mt-4">
+        <div class="row g-3">
+          <div class="col-12">
+            <div class="card shadow-lg border-0">
+              <div class="card-body">
+                <h6 class="card-title fw-bold text-dark">Server Monitoring</h6>
+                <span class="card-text"><strong>Software:</strong> Zabbix, Cacti, Nagios</span>
+                <br>
+                <span class="card-text"><strong>Description:</strong> Real-time monitoring systems with alert systems.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">Application Quality Assurance</h6>
+                    <span class="card-text"><strong>Software:</strong> Zygnos, Sonarqube</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> Software for quality check when build or develop and application.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">Patch Management</h6>
+                    <span class="card-text"><strong>Software:</strong> Opsi</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> Path management for endpoint following Windows, Linux and MacOS.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">CI-CD (Continuous Integration - Continuous Deployment)</h6>
+                    <span class="card-text"><strong>Software:</strong> Harbor, Gitlab</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> Cloud software integration.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">Log Management</h6>
+                    <span class="card-text"><strong>Software:</strong> Elastic Stack, Gray Log</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> Syslog management for log database analysis.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">Server Monitoring</h6>
+                    <span class="card-text"><strong>Software:</strong> Zabbix, cacti, Nagios</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> Real time monitoring systems with alert systems.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">Network Monitoring</h6>
+                    <span class="card-text"><strong>Software:</strong> Zabbix, Netbox, cacti, Nagios</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> Real time monitoring systems with alert systems.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">VAPT (Vulnerability Analysis and Penetration Test)</h6>
+                    <span class="card-text"><strong>Software:</strong> Greenbone, ZAP, Nmap, metasploit</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> VA tools analysis.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">ITSM (IT Service Management)</h6>
+                    <span class="card-text"><strong>Software:</strong> GPLI, Snipe-IT</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> Case management/ Incident, asset inventory management.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">SOAR (Security Orchestration, Automation, and Response)</h6>
+                    <span class="card-text"><strong>Software:</strong> Tracecat</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> Software designed to improve the efficiency and effectiveness of an organization's security operations by combining orchestration, automation, and incident response capabilities into a single platform.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continuing with remaining items -->
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">SIEM (Security Information and Event Management)</h6>
+                    <span class="card-text"><strong>Software:</strong> Wazuh</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> IT Security analysis tools include VA.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">XDR (Extended Detection and Response)</h6>
+                    <span class="card-text"><strong>Software:</strong> Wazuh</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> IT Security analysis tools include VA with Wazuh agent as XDR.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold text-dark">IDS/IPS (Intrusion Detection/Prevention Systems)</h6>
+                    <span class="card-text"><strong>Software:</strong> Suricata</span>
+                    <br>
+                    <span class="card-text"><strong>Description:</strong> Intrusion and prevention tools.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Alert Management</h6>
+                  <span class="card-text"><strong>Software:</strong> Zenduty</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Alert management systems.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Dashboard</h6>
+                  <span class="card-text"><strong>Software:</strong> Grafana, Metabase</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Dashboard visualization.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Phishing Simulation</h6>
+                  <span class="card-text"><strong>Software:</strong> Gophish / Zphiser / Evilginx, Tatanus SPF</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Security awareness test for phishing mail.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Firewall</h6>
+                  <span class="card-text"><strong>Software:</strong> Opensense, Pfsense, Mikrotik</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Firewall OS systems.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">VPN (Virtual Private Network)</h6>
+                  <span class="card-text"><strong>Software:</strong> Opensense, WireGuard</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Secure private network connection.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">NAC (Network Access Control)</h6>
+                  <span class="card-text"><strong>Software:</strong> Packetfence</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Network Access Control protection following security posture.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Password Management</h6>
+                  <span class="card-text"><strong>Software:</strong> Passbolt</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Password database management.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Cloud Security</h6>
+                  <span class="card-text"><strong>Software:</strong> Wazuh</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> IT Security analysis tools include VA with Wazuh agent as XDR.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">WAF</h6>
+                  <span class="card-text"><strong>Software:</strong> CloudFlare</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Web Access Firewall.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">NE: Wireless Check and Tuning</h6>
+                  <span class="card-text"><strong>Software:</strong> Ekahau [Lic]</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Network wireless assessment and design tools.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">NE: Network Management Tools and Documentation</h6>
+                  <span class="card-text"><strong>Software:</strong> Netbox</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Network documentation and management capabilities (Device inventory, IPAM, Virtualization, backup config, etc).</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">NE: Assessment, Design Concept, Project Management</h6>
+                  <span class="card-text"><strong>Software:</strong> -</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Help customer to improve their network following best practice solution as needed, including Data Centre solution, Cabling Installation, UPS, Fire Suppression, Facilities.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Windows Server Services</h6>
+                  <span class="card-text"><strong>Software:</strong> Microsoft Windows Server (AD, DHCP, DNS, NT, WSUS, SCCM etc)</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Help customer to improve their core systems for supporting daily operation using Windows server systems.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">NE: Automatic Backup Config</h6>
+                  <span class="card-text"><strong>Software:</strong> rConfig, Rancid, cacti</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Automatic backup network configuration and help network engineer to have backup for recovery config in case of incident.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">EDR Antivirus</h6>
+                  <span class="card-text"><strong>Software:</strong> SentinelOne, Eset, OSSEC, Velociraptor</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Best EDR solution integrated with AI and Machine Learning.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">HW PC and Server Solutions</h6>
+                  <span class="card-text"><strong>Software:</strong> Dell, HPE, LENOVO, Contex</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Provide H/W solution with direct principal agreement (regular and Industrial Grade).</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">NE: Network Traffic Analysis</h6>
+                  <span class="card-text"><strong>Software:</strong> Zeek with Graylog, Suricata, Wireshark, Kibana</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Cybersecurity practice focused on monitoring, analyzing, and understanding network traffic to detect anomalies, threats, and malicious activities.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Virtual Machine Solution and Services</h6>
+                  <span class="card-text"><strong>Software:</strong> Proxmox VE for HCI</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Virtualization platform that tightly integrates compute, storage and networking resources, manages highly available clusters.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">SOC (Security Operation Center) Services</h6>
+                  <span class="card-text"><strong>Software:</strong> XDR, SIEM, SOAR, Suricata</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Managed service SOC.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Threat Intelligence</h6>
+                  <span class="card-text"><strong>Software:</strong> MISP, The HIVE</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Platform berbagi informasi ancaman untuk mendukung analisis dan respons insiden.</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body">
+                  <h6 class="card-title fw-bold text-dark">Incident Response</h6>
+                  <span class="card-text"><strong>Software:</strong> Cortex, Iris</span>
+                  <br>
+                  <span class="card-text"><strong>Description:</strong> Platform untuk mengelola incident dan response.</span>
+              </div>
+          </div>
+      </div>
+        </div>
+      </div>
+      
     </div>
 
   </main>
@@ -335,12 +751,12 @@
 
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
+        <div class="col-lg-4 col-md-6 footer-about text-center text-md-start">
+          <a href="index.html">
             <!--
             <span class="sitename">What2mon.com</span>
             -->
-            <img src="assets/img/what2mon-logo-02.png" alt=""width="320" height="201">
+            <img src="assets/img/what2mon-logo-02.png" alt="" width="320" height="201">
           </a>
           <div class="footer-contact pt-3">
           
@@ -390,7 +806,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>©<span>2024 Copyright</span> <strong class="px-1 sitename">What2mon</strong><span>All Rights Reserved</span></p>
+      <p>©<span>2025 Copyright</span> <strong class="px-1 sitename">What2mon</strong><span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
