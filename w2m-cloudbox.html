@@ -50,6 +50,16 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
 
+    <!-- Custom CSS for equal row heights -->
+    <style>
+      .table-equal-height tbody tr {
+        height: 80px; /* Anda bisa menyesuaikan nilai ini sesuai kebutuhan */
+      }
+      .table-equal-height tbody td {
+        vertical-align: middle;
+      }
+    </style>
+
     <!-- =======================================================
   * Template Name: BizLand
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -232,7 +242,7 @@
         <h5 class="mt-4 fw-bold">IT Infrastructure</h5>
         <!-- Table -->
         <div class="table-responsive d-none d-sm-block">
-          <table class="table table-striped table-bordered">
+          <table class="table table-striped table-bordered table-equal-height" style="vertical-align: middle;">
             <thead class="table-dark">
               <tr class="text-center">
                 <th width="2%">No</th>
@@ -376,7 +386,7 @@
               <div class="card shadow-lg border-0">
                 <div class="card-body">
                   <h6 class="card-title fw-bold text-dark">
-                    Microservices Platform
+                    Platform Microservices
                   </h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
@@ -404,8 +414,8 @@
                   <br />
                   <span class="card-text"
                     ><strong>Description:</strong> <br />
-                    Path management for endpoint following Windows, Linux and
-                    MacOS</span
+                    Patch management for endpoints running Windows, Linux, and
+                    macOS</span
                   >
                 </div>
               </div>
@@ -452,8 +462,9 @@
             <div class="col-12">
               <div class="card shadow-lg border-0">
                 <div class="card-body">
-                  <h6 class="card-title fw-bold text-dark">VPN</h6>
-                  <h6 class="text-dark">Virtual Private Network</h6>
+                  <h6 class="card-title fw-bold text-dark">
+                    Virtual Private Network
+                  </h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
                     Opensense, WireGuard</span
@@ -461,7 +472,7 @@
                   <br />
                   <span class="card-text"
                     ><strong>Description:</strong> <br />
-                    Secure private network connection</span
+                    Secure private network connection using VPN</span
                   >
                 </div>
               </div>
@@ -494,7 +505,7 @@
                   </h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
-                    Ekahau [Lic]</span
+                    Ekahau</span
                   >
                   <br />
                   <span class="card-text"
@@ -518,8 +529,9 @@
                   <br />
                   <span class="card-text"
                     ><strong>Description:</strong> <br />
-                    Network documentation and management capabilities (Device
-                    inventory, IPAM, Virtualization, backup config, etc)</span
+                    Network documentation and management capabilities 
+                    <br>
+                    (Device inventory, IPAM, Virtualization, backup config, etc)</span
                   >
                 </div>
               </div>
@@ -554,13 +566,12 @@
                   </h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
-                    Dell, HPE, LENOVO, Contex</span
+                    Dell, HPE, LENOVO, Contex, C&T</span
                   >
                   <br />
                   <span class="card-text"
                     ><strong>Description:</strong> <br />
-                    Provide hardware solution with direct principal agreement
-                    (regular and Industrial Grade)</span
+                    Provide hardware solution with direct principal agreement for Regular and Industrial Grade</span
                   >
                 </div>
               </div>
@@ -595,14 +606,13 @@
                   </h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
-                    Proxmox VE for HCI</span
+                    Proxmox VE for HCI Technology</span
                   >
                   <br />
                   <span class="card-text"
                     ><strong>Description:</strong> <br />
                     Virtualization platform that tightly integrates compute,
-                    storage and networking resources, manages highly available
-                    clusters</span
+                    storage, and networking resources</span
                   >
                 </div>
               </div>
@@ -613,7 +623,7 @@
         <h5 class="mt-4 fw-bold">Cyber Security</h5>
         <!-- Table -->
         <div class="table-responsive d-none d-sm-block">
-          <table class="table table-striped table-bordered">
+          <table class="table table-striped table-bordered table-equal-height" style="vertical-align: middle;">
             <thead class="table-dark">
               <tr class="text-center">
                 <th width="2%">No</th>
@@ -623,7 +633,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr style="min-height: 100px;">
                 <td class="text-center">1</td>
                 <td>
                   <div class="d-flex" style="flex-direction: column">
@@ -634,7 +644,7 @@
                 <td>Greenbone Openfast, ZAP, Nmap, Metasploit, Vuls</td>
                 <td>VA tools analysis</td>
               </tr>
-              <tr>
+              <tr style="min-height: 100px;">
                 <td class="text-center">2</td>
                 <td>
                   <div class="d-flex" style="flex-direction: column">
@@ -695,7 +705,7 @@
                 <td>Gophish, Zphiser, Evilginx, Tatanus SPF</td>
                 <td>Security awareness test for phishing mail</td>
               </tr>
-              <tr>
+              <tr style="height: 100px;">
                 <td class="text-center">7</td>
                 <td>
                   <span class="fw-bold"> Firewall </span>
@@ -781,13 +791,15 @@
             <div class="col-12">
               <div class="card shadow-lg border-0">
                 <div class="card-body">
-                  <h6 class="card-title fw-bold text-dark">VAPT</h6>
+                  <h6 class="card-title fw-bold text-dark">
+                    VAPT
+                  </h6>
                   <h6 class="text-dark">
                     Vulnerability Analysis & Penetration Test
                   </h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
-                    Greenbone, ZAP, Nmap, Metasploit</span
+                    Greenbone Openfast, ZAP, Nmap, Metasploit, Vuls</span
                   >
                   <br />
                   <span class="card-text"
@@ -888,7 +900,7 @@
                   </h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
-                    Gophish / Zphiser / Evilginx, Tatanus SPF</span
+                    Gophish, Zphiser, Evilginx, Tatanus SPF</span
                   >
                   <br />
                   <span class="card-text"
@@ -974,7 +986,7 @@
             <div class="col-12">
               <div class="card shadow-lg border-0">
                 <div class="card-body">
-                  <h6 class="card-title fw-bold text-dark">EDR Antivirus</h6>
+                  <h6 class="card-title fw-bold text-dark">EDR, XDR, Antivirus</h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
                     SentinelOne, Eset, OSSEC, Velociraptor</span
@@ -982,8 +994,7 @@
                   <br />
                   <span class="card-text"
                     ><strong>Description:</strong> <br />
-                    Best EDR solution integrated with AI and Machine
-                    Learning</span
+                    Comprehensive security solution that detects, analyzes, and responds to threats across multiple IT infrastructure layers (endpoints, network devices, cloud workloads, third-party APIs, and other sources)</span
                   >
                 </div>
               </div>
@@ -993,15 +1004,16 @@
               <div class="card shadow-lg border-0">
                 <div class="card-body">
                   <h6 class="card-title fw-bold text-dark">SOC Services</h6>
-                  <h6 class="text-dark">Security Operation Center Services</h6>
+                  <h6 class="text-dark">Security Operation Center</h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
-                    XDR, SIEM, SOAR, Suricata</span
+                    XDR, SIEM, SOAR, Suricata, Snort, Elastic stack, Graylog,
+                    Threat Hunting</span
                   >
                   <br />
                   <span class="card-text"
                     ><strong>Description:</strong> <br />
-                    Managed service SOC</span
+                    Managed service 24x7 for security operation center</span
                   >
                 </div>
               </div>
@@ -1032,7 +1044,7 @@
         <h5 class="mt-4 fw-bold">System Quality Assurance</h5>
         <!-- Table -->
         <div class="table-responsive d-none d-sm-block">
-          <table class="table table-striped table-bordered">
+          <table class="table table-striped table-bordered table-equal-height" style="vertical-align: middle;">
             <thead class="table-dark">
               <tr class="text-center">
                 <th width="2%">No</th>
@@ -1056,13 +1068,10 @@
               <tr>
                 <td class="text-center">2</td>
                 <td>
-                  <div class="d-flex" style="flex-direction: column">
-                    <span class="fw-bold">CI-CD</span>
-                    <span>Continuous Integration - Continuous Deployment</span>
-                  </div>
+                  <span class="fw-bold">CI-CD</span>
                 </td>
                 <td>Harbor, Gitlab</td>
-                <td>Cloud software integration</td>
+                <td>Cloud software integration for Continuous Integration - Continuous Deployment</td>
               </tr>
               <tr>
                 <td class="text-center">3</td>
@@ -1098,12 +1107,12 @@
                   </h6>
                   <span class="card-text"
                     ><strong>Software:</strong> <br />
-                    Zygnos, Sonarqube</span
+                    Zygnos, Sonarqube, Snyk</span
                   >
                   <br />
                   <span class="card-text"
                     ><strong>Description:</strong> <br />
-                    Software for quality check when build or develop and
+                    Software for quality checks when building or developing an
                     application</span
                   >
                 </div>
@@ -1124,7 +1133,7 @@
                   <br />
                   <span class="card-text"
                     ><strong>Description:</strong> <br />
-                    Cloud software integration</span
+                    Cloud software integration for Continuous Integration - Continuous Deployment</span
                   >
                 </div>
               </div>
@@ -1173,7 +1182,7 @@
         <h5 class="mt-4 fw-bold">IT Service Management</h5>
         <!-- Table -->
         <div class="table-responsive d-none d-sm-block">
-          <table class="table table-striped table-bordered">
+          <table class="table table-striped table-bordered table-equal-height" style="vertical-align: middle;">
             <thead class="table-dark">
               <tr class="text-center">
                 <th width="2%">No</th>
